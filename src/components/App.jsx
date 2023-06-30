@@ -1,9 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./Router";
-import Header from "./Header";
-import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import reset from "styled-reset";
+import AppRouter from "./Router";
+import Header from "./Header";
+import Background from "./Background";
 
 const GolbalStyle = createGlobalStyle`
 ${reset}
@@ -44,6 +45,7 @@ function App() {
     <BrowserRouter>
       <Wrapper>
         <GolbalStyle />
+        <Background />
         <Header />
         <AppRouter />
       </Wrapper>
