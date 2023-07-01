@@ -1,9 +1,8 @@
-import { BrowserRouter } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import reset from "styled-reset";
-import AppRouter from "./Router";
 import Header from "./Header";
+import Projects from "../routes/Projects";
 import Background from "./Background";
 
 const GolbalStyle = createGlobalStyle`
@@ -15,7 +14,7 @@ ${reset}
   --color-orange: #FF804A;
   --color-pink: #F79B99;
   --color-beige: #F8CC8E;
-  --color-black: #00000;
+  --color-black: #000;
   --color-white: #FFFFFF;
   --color-gray-100: #C9C9C9;
   --color-gray-200: #B0B0B0;
@@ -42,19 +41,17 @@ body {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Wrapper>
-        <GolbalStyle />
-        <Background />
-        <Header />
-        <AppRouter />
-      </Wrapper>
-    </BrowserRouter>
+    <Wrapper>
+      <GolbalStyle />
+      <Background />
+      <Header />
+      <Projects />
+    </Wrapper>
   );
 }
 
 export default App;
 
 const Wrapper = styled.div`
-  width: 100%;
+  // width: 100%;
 `;

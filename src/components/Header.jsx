@@ -1,19 +1,16 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <>
       <Nav>
-        <Title>
-          <Link to="/">NAYOUNG</Link>
-        </Title>
-        <NavUl>
+        <Title role="Nayoung's Portfolio">NAYOUNG</Title>
+        <NavUl role="navigation">
           <li style={{ marginBottom: "12px" }}>
-            <Link to="/profile">/Profile</Link>
+            <a href="#profile">/Profile</a>
           </li>
           <li>
-            <Link to="/projects">/Projects</Link>
+            <a href="#projects">/Projects</a>
           </li>
         </NavUl>
       </Nav>
@@ -22,6 +19,8 @@ export default function Header() {
 }
 
 const Nav = styled.nav`
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -32,6 +31,7 @@ const Title = styled.h1`
   font-family: "Moirai One", cursive;
   font-size: 76px;
   color: var(--color-magenta);
+  cursor: pointer;
 `;
 
 const NavUl = styled.ul`
