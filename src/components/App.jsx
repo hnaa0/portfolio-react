@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import reset from "styled-reset";
 import Header from "./Header";
+import Home from "../routes/Home";
 import Projects from "../routes/Projects";
 import Background from "./Background";
 
@@ -45,6 +46,7 @@ function App() {
       <GolbalStyle />
       <Background />
       <Header />
+      <Home />
       <Projects />
     </Wrapper>
   );
