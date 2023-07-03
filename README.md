@@ -1,4 +1,4 @@
-![image](https://github.com/hnaa0/portfolio-react/assets/76546543/02dd040c-7aff-41b1-941b-34c318c90cea)# portfolio-react
+# portfolio-react
 리액트로 만든 포트폴리오입니다.
 
 [➡Preview](https://portfolio-react-hnaa0.vercel.app/)
