@@ -24,17 +24,15 @@ export default function ProjectCard({ project }) {
           backgroundImage: ` linear-gradient(rgba(255, 255, 255, 10%) , rgba(255, 255, 255, 10%)), url(${image})`,
         }}
       >
-        <InnerBox>
-          {modal && (
-            <ProjectInfo
-              title={title}
-              desc={desc}
-              source={source}
-              preview={preview}
-              modalClose={handleModal}
-            />
-          )}
-        </InnerBox>
+        {modal && (
+          <ProjectInfo
+            title={title}
+            desc={desc}
+            source={source}
+            preview={preview}
+            modalClose={handleModal}
+          />
+        )}
       </ProjectBox>
     </>
   );
@@ -52,13 +50,4 @@ const ProjectBox = styled.div`
     border-color: var(--color-magenta);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
-`;
-
-const InnerBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-  padding: 20px;
 `;

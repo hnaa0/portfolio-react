@@ -61,10 +61,14 @@ const TextGroup = styled.div`
 
 const Text = styled.h2`
   user-select: none;
-  font-size: 72px;
+  font-size: 76px;
   font-weight: 200;
   letter-spacing: 1.2px;
   color: var(--color-gray-200);
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 52px;
+  }
 `;
 
 const Text2 = styled(Text)`

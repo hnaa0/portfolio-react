@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { useRef } from "react";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import reset from "styled-reset";
 import Header from "./Header";
 import Home from "../routes/Home";
@@ -8,6 +8,7 @@ import Projects from "../routes/Projects";
 import Profile from "../routes/Profile";
 import Background from "./Background";
 import ScrollToTop from "./ScrollToTop";
+import theme from "./Theme";
 
 const GolbalStyle = createGlobalStyle`
 ${reset}
@@ -47,13 +48,15 @@ function App() {
   const scrollRef = useRef([]);
   return (
     <Wrapper>
-      <GolbalStyle />
-      <Background />
-      <Header scrollRef={scrollRef} />
-      <Home ref={scrollRef} />
-      <Profile ref={scrollRef} />
-      <Projects ref={scrollRef} />
-      <ScrollToTop />
+      <ThemeProvider theme={theme}>
+        <GolbalStyle />
+        <Background />
+        <Header scrollRef={scrollRef} />
+        <Home ref={scrollRef} />
+        <Profile ref={scrollRef} />
+        <Projects ref={scrollRef} />
+        <ScrollToTop />
+      </ThemeProvider>
     </Wrapper>
   );
 }
@@ -61,5 +64,7 @@ function App() {
 export default App;
 
 const Wrapper = styled.div`
-  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

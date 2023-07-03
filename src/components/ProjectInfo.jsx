@@ -63,6 +63,11 @@ const Modal = styled.section`
   cursor: default;
   border: 1px solid var(--color-purple);
   background-color: var(--color-white);
+
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 100%;
+    margin-right: 4px;
+  }
 `;
 
 const CloseBtn = styled.div`

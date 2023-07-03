@@ -84,17 +84,19 @@ function Profile(props, ref) {
                   rel="noreferrer"
                   target="_blank"
                   href="https://github.com/hnaa0"
-                ></a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  className="bi bi-github"
-                  viewBox="0 0 16 16"
                 >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
+                  <LinkSvg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    className="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </LinkSvg>
+                </a>
+
                 <Tooltip>Github</Tooltip>
               </li>
               <li>
@@ -103,7 +105,7 @@ function Profile(props, ref) {
                   target="_blank"
                   href="https://cerulean-avocado-b54.notion.site/FE-Developer-bb13e403fa49496aac917eb3b59a0550"
                 >
-                  <svg
+                  <LinkSvg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -113,7 +115,7 @@ function Profile(props, ref) {
                   >
                     <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
                     <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                  </svg>
+                  </LinkSvg>
                 </a>
                 <Tooltip>Resume</Tooltip>
               </li>
@@ -122,17 +124,19 @@ function Profile(props, ref) {
                   rel="noreferrer"
                   target="_blank"
                   href="https://velog.io/@hnaa0"
-                ></a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  className="bi bi-archive"
-                  viewBox="0 0 16 16"
                 >
-                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-                </svg>
+                  <LinkSvg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    className="bi bi-archive"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                  </LinkSvg>
+                </a>
+
                 <Tooltip>Velog</Tooltip>
               </li>
             </LinkUl>
@@ -158,6 +162,16 @@ const Title = styled.h2`
   font-size: 56px;
   font-style: italic;
   margin-bottom: 52px;
+
+  @media ${({ theme }) => theme.device.tablet} {
+    font-size: 48px;
+    margin-bottom: 36px;
+  }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 40px;
+    margin-bottom: 36px;
+  }
 `;
 
 const ProfileGroup = styled.div`
@@ -165,14 +179,30 @@ const ProfileGroup = styled.div`
 `;
 
 const ImgBox = styled.div`
-  margin-right: 24px;
+  margin-right: 32px;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-right: 16px;
+  }
 `;
 
 const ProfileImg = styled.img`
-  width: 200px;
-  height: 260px;
+  width: 240px;
+  height: 310px;
   object-fit: cover;
-  border: 1px solid var(--color-black);
+  border: 1.2px solid var(--color-black);
+
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 160px;
+    height: 230px;
+    object-fit: cover;
+  }
 `;
 
 const Toggle = styled.div`
@@ -182,6 +212,7 @@ const Toggle = styled.div`
   height: 20px;
   border-radius: 12px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 `;
 
 const ToggleCircle = styled.div`
@@ -198,6 +229,10 @@ const ToggleCircle = styled.div`
 const UlBox = styled.div`
   padding: 8px 0px;
   font-size: 20px;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 16px;
+  }
 `;
 
 const UlBoxH3 = styled.h3`
@@ -214,6 +249,10 @@ const InfoUl = styled.ul`
   margin-top: 20px;
   margin-bottom: 52px;
 
+  @media ${({ theme }) => theme.device.mobile} {
+    margin-bottom: 42px;
+  }
+
   & > li {
     display: block;
     margin-bottom: 16px;
@@ -222,6 +261,12 @@ const InfoUl = styled.ul`
   & > li > svg {
     vertical-align: middle;
     margin-right: 16px;
+
+    @media ${({ theme }) => theme.device.mobile} {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
   }
 `;
 
@@ -237,6 +282,11 @@ const Tooltip = styled.span`
   padding: 4px;
   border-radius: 4px;
   background-color: var(--color-magenta);
+
+  @media ${({ theme }) => theme.device.mobile} {
+    top: 24px;
+    left: 8px;
+  }
 `;
 
 const LinkUl = styled.ul`
@@ -252,5 +302,13 @@ const LinkUl = styled.ul`
         visibility: visible;
       }
     }
+  }
+`;
+
+const LinkSvg = styled.svg`
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
   }
 `;

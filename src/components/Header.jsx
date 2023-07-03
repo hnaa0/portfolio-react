@@ -34,7 +34,6 @@ export default function Header({ scrollRef }) {
               setNavIdx(NAV[1].idx);
             }}
             ref={(ref) => (navRef.current[1] = ref)}
-            style={{ marginBottom: "12px" }}
           >
             <a href="#profile">/Profile</a>
           </li>
@@ -59,6 +58,12 @@ const Nav = styled.nav`
   justify-content: space-between;
   width: 100%;
   padding: 4px 16px;
+
+  @media ${({ theme }) => theme.device.mobile} {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
 `;
 
 const Title = styled.h1`
@@ -66,6 +71,15 @@ const Title = styled.h1`
   font-size: 76px;
   color: var(--color-magenta);
   cursor: pointer;
+
+  @media ${({ theme }) => theme.device.tablet} {
+    font-size: 68px;
+  }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
 `;
 
 const NavUl = styled.ul`
@@ -73,11 +87,25 @@ const NavUl = styled.ul`
   flex-direction: column;
   align-items: flex-end;
 
+  @media ${({ theme }) => theme.device.mobile} {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   & > li {
     font-size: 36px;
 
     &:hover {
       color: var(--color-magenta);
+    }
+
+    @media ${({ theme }) => theme.device.tablet} {
+      font-size: 28px;
+    }
+
+    @media ${({ theme }) => theme.device.mobile} {
+      font-size: 20px;
     }
   }
 `;
