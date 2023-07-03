@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { forwardRef } from "react";
 import ProjectCard from "../components/ProjectCard";
 
-export default function Projects() {
+function Projects(props, ref) {
   const projects = [
     {
       title: "Coupang Markups",
@@ -49,7 +50,7 @@ export default function Projects() {
 
   return (
     <>
-      <Container>
+      <Container ref={(projectsRef) => (ref.current[2] = projectsRef)}>
         <Title>Projects</Title>
         <ProjectsGroup>
           {projects.map((proj, index) => {
@@ -61,12 +62,15 @@ export default function Projects() {
   );
 }
 
+const ProjectsWithRef = forwardRef(Projects);
+export default ProjectsWithRef;
+
 const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 52px 16px;
+  padding: 152px 16px;
 `;
 
 const Title = styled.h2`

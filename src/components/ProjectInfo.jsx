@@ -46,6 +46,7 @@ const Modal = styled.section`
   transform: translate(-50%, -50%);
   width: 400px;
   height: 250px;
+  cursor: default;
   border: 1px solid var(--color-purple);
   background-color: var(--color-white);
 `;

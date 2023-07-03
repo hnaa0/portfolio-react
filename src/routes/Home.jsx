@@ -1,8 +1,9 @@
 import styled, { keyframes } from "styled-components";
+import { forwardRef } from "react";
 
-export default function Home() {
+function Home(props, ref) {
   return (
-    <Container>
+    <Container ref={(homeRef) => (ref.current[0] = homeRef)}>
       <TextGroup role="banner">
         <Text>PORTFOLIO</Text>
         <Text2>PORTFOLIO</Text2>
@@ -11,6 +12,9 @@ export default function Home() {
     </Container>
   );
 }
+
+const HomeWithRef = forwardRef(Home);
+export default HomeWithRef;
 
 const Bounce = keyframes`
 0% {
@@ -31,7 +35,7 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 52px 16px;
+  padding: 152px 16px;
 `;
 
 const TextGroup = styled.div`

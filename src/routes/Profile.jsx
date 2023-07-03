@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import styled from "styled-components";
 
-export default function Profile() {
+function Profile(props, ref) {
   const [isFlip, setFlip] = useState(true);
 
   const handleFlip = () => {
@@ -10,7 +10,7 @@ export default function Profile() {
 
   return (
     <>
-      <Container>
+      <Container ref={(profileRef) => (ref.current[1] = profileRef)}>
         <Title>Profile</Title>
         <ProfileGroup>
           <ImgBox>
@@ -143,12 +143,15 @@ export default function Profile() {
   );
 }
 
+const ProfileWithRef = forwardRef(Profile);
+export default ProfileWithRef;
+
 const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 96px 16px;
+  padding: 152px 16px;
 `;
 
 const Title = styled.h2`

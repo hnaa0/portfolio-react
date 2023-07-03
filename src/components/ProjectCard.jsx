@@ -140,6 +140,7 @@ const InfoBtn = styled.div`
   align-items: center;
   width: 28px;
   height: 28px;
+  cursor: pointer;
 
   & > svg:hover {
     fill: var(--color-magenta);

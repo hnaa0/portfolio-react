@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { useRef } from "react";
 import styled from "styled-components";
 import reset from "styled-reset";
 import Header from "./Header";
@@ -6,6 +7,7 @@ import Home from "../routes/Home";
 import Projects from "../routes/Projects";
 import Profile from "../routes/Profile";
 import Background from "./Background";
+import ScrollToTop from "./ScrollToTop";
 
 const GolbalStyle = createGlobalStyle`
 ${reset}
@@ -42,14 +44,16 @@ body {
 `;
 
 function App() {
+  const scrollRef = useRef([]);
   return (
     <Wrapper>
       <GolbalStyle />
       <Background />
-      <Header />
-      <Home />
-      <Profile />
-      <Projects />
+      <Header scrollRef={scrollRef} />
+      <Home ref={scrollRef} />
+      <Profile ref={scrollRef} />
+      <Projects ref={scrollRef} />
+      <ScrollToTop />
     </Wrapper>
   );
 }
