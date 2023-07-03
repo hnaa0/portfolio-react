@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export default function ProjectInfo({ modalClose, title, desc }) {
+export default function ProjectInfo({
+  modalClose,
+  title,
+  desc,
+  source,
+  preview,
+}) {
   return (
     <Container
       onClick={(e) => {
@@ -24,6 +30,14 @@ export default function ProjectInfo({ modalClose, title, desc }) {
           <Title>{title}</Title>
           <Desc>{desc}</Desc>
         </TextGroup>
+        <BtnGroup>
+          <Btn href={source} target="_blank" rel="noreferrer">
+            CODE
+          </Btn>
+          <Btn href={preview} target="_blank" rel="noreferrer">
+            PREVIEW
+          </Btn>
+        </BtnGroup>
       </Modal>
     </Container>
   );
@@ -80,4 +94,24 @@ const Title = styled.h3`
 
 const Desc = styled.p`
   line-height: 1.2;
+`;
+
+const BtnGroup = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 8px;
+  right: 8px;
+  width: 100%;
+`;
+
+const Btn = styled.a`
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  margin: 0 4px;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-magenta);
+  }
 `;

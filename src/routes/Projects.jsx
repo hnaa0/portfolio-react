@@ -74,7 +74,7 @@ const Container = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 48px;
+  font-size: 56px;
   font-style: italic;
   margin-bottom: 36px;
 `;
@@ -83,6 +83,6 @@ const ProjectsGroup = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 240px;
-  grid-gap: 12px;
+  grid-gap: 16px;
   width: 1000px;
 `;
