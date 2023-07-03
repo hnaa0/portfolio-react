@@ -4,6 +4,7 @@ import reset from "styled-reset";
 import Header from "./Header";
 import Home from "../routes/Home";
 import Projects from "../routes/Projects";
+import Profile from "../routes/Profile";
 import Background from "./Background";
 
 const GolbalStyle = createGlobalStyle`
@@ -47,6 +48,7 @@ function App() {
       <Background />
       <Header />
       <Home />
+      <Profile />
       <Projects />
     </Wrapper>
   );
