@@ -12,24 +12,28 @@
 
 ## DETAIL
 ### Home
-![image](https://github.com/hnaa0/portfolio-react/assets/76546543/a98482e0-80b8-4dfb-8440-e4ee352866c3)
+![image](https://github.com/hnaa0/portfolio-react/assets/76546543/7fd9eb05-73ea-46f6-ae71-9554e0475fd3)
+
 
 <br />
 <br />
 
 ### Profile
-![image](https://github.com/hnaa0/portfolio-react/assets/76546543/d3b9cda8-0e01-4fb8-9f51-4bd009a035bf)
+![image](https://github.com/hnaa0/portfolio-react/assets/76546543/2494e5a7-0ae5-453d-8fd7-dd5b850763b7)
+
 
 
 <br />
 <br />
 
 ### Projects
-![image](https://github.com/hnaa0/portfolio-react/assets/76546543/8a1cdf8a-72d3-4326-a20d-4fe83870fb11)
+![image](https://github.com/hnaa0/portfolio-react/assets/76546543/93ebe6e4-9e28-4bd5-af2f-75eea2063e8a)
+
 
 
 <br />
 <br />
 
 ### Responsive
-![image](https://github.com/hnaa0/portfolio-react/assets/76546543/0ebbecff-63e6-4d7b-b2a1-c45b5e4e824a)
+![image](https://github.com/hnaa0/portfolio-react/assets/76546543/c374fd44-1f0f-4a7e-ab1c-00bdca802af6)
+
