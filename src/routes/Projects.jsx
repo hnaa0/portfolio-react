@@ -33,6 +33,13 @@ function Projects(props, ref) {
       preview: "https://hnaa0.github.io/react-todolist/",
     },
     {
+      title: "Calculator with React",
+      desc: "React로 구현한 계산기입니다. 간단한 계산이 가능합니다.",
+      image: "images/calculator.png",
+      source: "https://github.com/hnaa0/calc-react",
+      preview: "https://hnaa0.github.io/calc-react/",
+    },
+    {
       title: "React Shop",
       desc: "Fakestore api를 활용해 구현한 구현한 쇼핑몰입니다. 테마 변경, 아이템 검색, 장바구니 기능이 있습니다.",
       image: "images/reactshop.png",

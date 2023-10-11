@@ -8,12 +8,8 @@ export default function ProjectInfo({
   preview,
 }) {
   return (
-    <Container
-      onClick={(e) => {
-        e.stopPropagation();
-      }}
-    >
-      <Modal>
+    <Container onClick={modalClose}>
+      <Modal onClick={(e) => e.stopPropagation()}>
         <CloseBtn onClick={modalClose}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
