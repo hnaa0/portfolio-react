@@ -35,7 +35,7 @@ export default function Header({ scrollRef }) {
             }}
             ref={(ref) => (navRef.current[1] = ref)}
           >
-            <a href="#profile">/Profile</a>
+            /Profile
           </li>
           <li
             onClick={() => {
@@ -43,7 +43,7 @@ export default function Header({ scrollRef }) {
             }}
             ref={(ref) => (navRef.current[2] = ref)}
           >
-            <a href="#projects">/Projects</a>
+            /Projects
           </li>
         </NavUl>
       </Nav>
