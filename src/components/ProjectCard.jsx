@@ -10,15 +10,16 @@ export default function ProjectCard({ project }) {
     if (modal === false) {
       setModal(true);
       document.body.style.cssText = `
-        width: 100%;
-        position: fixed;
-        top: -${window.scrollY}px;
-        overflow-y: scroll;
+      width: 100%;
+      position: fixed;
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
       `;
     } else {
       setModal(false);
-      document.body.style.position = "relative";
-      window.scrollTo(0, parseInt(window.scrollY || "0", 10) * -1);
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
     }
   };
 
