@@ -98,6 +98,7 @@ const NavUl = styled.ul`
 
     &:hover {
       color: var(--color-magenta);
+      cursor: pointer;
     }
 
     @media ${({ theme }) => theme.device.tablet} {

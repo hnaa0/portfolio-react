@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export default function ProjectInfo({
-  modalClose,
+  handleModal,
   title,
   desc,
   source,
   preview,
 }) {
   return (
-    <Container onClick={modalClose}>
+    <Container onClick={handleModal}>
       <Modal onClick={(e) => e.stopPropagation()}>
-        <CloseBtn onClick={modalClose}>
+        <CloseBtn onClick={handleModal}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

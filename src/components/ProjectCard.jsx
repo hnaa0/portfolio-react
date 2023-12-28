@@ -9,10 +9,16 @@ export default function ProjectCard({ project }) {
   const handleModal = () => {
     if (modal === false) {
       setModal(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.cssText = `
+        width: 100%;
+        position: fixed;
+        top: -${window.scrollY}px;
+        overflow-y: scroll;
+      `;
     } else {
       setModal(false);
-      document.body.style.overflow = "unset";
+      document.body.style.position = "relative";
+      window.scrollTo(0, parseInt(window.scrollY || "0", 10) * -1);
     }
   };
 
@@ -30,7 +36,7 @@ export default function ProjectCard({ project }) {
             desc={desc}
             source={source}
             preview={preview}
-            modalClose={handleModal}
+            handleModal={handleModal}
           />
         )}
       </ProjectBox>
@@ -47,7 +53,7 @@ const ProjectBox = styled.div`
   border: 1px solid var(--color-purple);
 
   &:hover {
-    border-color: var(--color-magenta);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 1.8px solid var(--color-magenta);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   }
 `;
