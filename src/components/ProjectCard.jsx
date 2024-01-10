@@ -7,20 +7,7 @@ export default function ProjectCard({ project }) {
   const [modal, setModal] = useState(false);
 
   const handleModal = () => {
-    if (modal === false) {
-      setModal(true);
-      document.body.style.cssText = `
-      width: 100%;
-      position: fixed;
-      top: -${window.scrollY}px;
-      overflow-y: scroll;
-      `;
-    } else {
-      setModal(false);
-      const scrollY = document.body.style.top;
-      document.body.style.cssText = "";
-      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
-    }
+    modal ? setModal(false) : setModal(true);
   };
 
   return (
